@@ -1,6 +1,4 @@
 from django.contrib import admin
-
-# Register your models here.
 from .models import Question, Choice
 
 
@@ -17,3 +15,6 @@ class QuestionAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Question, QuestionAdmin)
+admin.site.site_header = "Polls Admin"
+admin.site.site_title = "Poll Admin Area"
+admin.site.index_title = 'Poll Admin'
