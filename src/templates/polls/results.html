@@ -11,6 +11,6 @@
     {% endfor %}
 </ul>
 
-<a class="btn btn-outline-primary" href="{% url 'polls:index' %}">Back To Polls</a>
-<a class="btn btn-outline-success" href="{% url 'polls:detail' question.id %}">Vote again?</a>
+<a class="btn btn-outline-warning" href="{% url 'polls:index' %}">Back To Polls</a>
+<a class="btn btn-outline-dark" href="{% url 'polls:detail' question.id %}">Vote again?</a>
 {% endblock %}
